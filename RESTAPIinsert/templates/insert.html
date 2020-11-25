@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Create and Consume REST Framework to Insert Data</title>
+</head>
+<body>
+    <center>
+        <h1>Add a Book to the Library</h1>
+        <form method="POST">
+            {% csrf_token %}
+        <table border="1">
+            <tr>
+                <td>Name of Book</td>
+                <td><input type="text" placeholder="Name of Book.." name="BookName"></td>
+            </tr>
+            <tr>
+                <td>Name of Author</td>
+                <td><input type="text" placeholder="Name of Author.." name="Author"></td>
+            </tr>
+            <tr>
+                <td>Genre of Book</td>
+                <td><input type="text" placeholder="Genre of Book.." name="Genre"></td>
+            </tr>
+            <tr>
+                <td>Year of Publishing</td>
+                <td><input type="text" placeholder="Year of Publishing.." name="PublishedYear"></td>
+            </tr>
+        </table>
+        <input type="submit" value="Add" onclick="return alert('Record saved successfully')">
+    </form>
+    </center>
+</body>
+</html>
