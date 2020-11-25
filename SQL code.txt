@@ -1,0 +1,7 @@
+-> Write SQL to insert and retrieve records from the above table using the same database client
+
+INSERT INTO booksdata (BookName , Author , Genre , PublishedYear)
+ VALUES ('The Hobbit','J.R.R Tolkien','Fantasy','1937')
+
+
+SELECT * FROM booksdata
